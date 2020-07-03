@@ -15,9 +15,8 @@ $(document).ready(function() {
 	var lon = lngArray[rowID];	
 	var city = localStorage.getItem("city");
 	console.log(check);
-	// Get API key from https://home.openweathermap.org/
 	if(check == "lat"){
-		var apiURI = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=484e47e5a69dfcd6d1d089e84051d0d5`;
+		var apiURI = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=484e47e5a69dfcd6d1d089e84051d0d5`;
 	}
 	else if(check == "city"){
 		var apiURI = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=484e47e5a69dfcd6d1d089e84051d0d5`;
