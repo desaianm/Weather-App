@@ -28,13 +28,13 @@ $(document).ready(function() {
 		dataType: "jsonp",
 		success: function (response) {
 			console.log(response);
-			$(".dataCity").html(`City : ${response.name}`);
+			$(".dataCity").html(` ${response.name} City`);
 			let temp = (response.main.temp - 273.15).toFixed(2);
-			$(".dataTemp").html(`Temperature :${temp} C`);			
+			$(".dataTemp").html(`Temperature  ${temp} C`);			
 			//$(".dataTemp").html((response.main.temp - 273.15).toFixed(2) + " C");
-			$(".dataWind").html(`Wind : ${response.wind.speed} m/s`);
-			$(".dataHum").html(`Humidity : ${response.main.humidity} %`);
-			$(".dataPress").html(`Pressure: ${response.main.pressure} hPa`);
+			$(".dataWind").html(`Wind   ${response.wind.speed} m/s`);
+			$(".dataHum").html(`Humidity  ${response.main.humidity} %`);
+			$(".dataPress").html(`Pressure  ${response.main.pressure} hPa`);
 		}
 
 	});
