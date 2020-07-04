@@ -86,7 +86,7 @@ li hr {border: solid thick navy;}
  font-family: arial;
  background-color: rgba(78, 183, 231, 0.938);
  color: white;
- padding: 10px 5px;
+ padding: 15px 20px;
  margin:auto;
  font-size: 30px;
 }
@@ -98,7 +98,7 @@ li hr {border: solid thick navy;}
  font-family: arial;
  background-color: rgba(78, 183, 231, 0.938);
  color: white;
- padding: 10px 5px;
+ padding: 15px 20px;
  margin:auto;
  font-size: 30px;
 	}
@@ -110,7 +110,7 @@ li hr {border: solid thick navy;}
  font-family: arial;
  background-color: rgba(78, 183, 231, 0.938);
  color: white;
- padding: 10px 5px;
+ padding: 15px 20px;
  margin:auto;
  font-size: 30px;	
 }
@@ -122,9 +122,9 @@ li hr {border: solid thick navy;}
  font-family: arial;
  background-color: rgba(78, 183, 231, 0.938);
  color: white;
- padding: 100px 5px;
+ padding: 15px 20px;
  margin:auto;
- font-size: 40px;
+ font-size: 30px;
 }
 
 .cities{
@@ -231,7 +231,7 @@ li hr {border: solid thick navy;}
 }
 	
 	
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 700px) {
 	.gridArea {
 		display: grid;
 		text-align: center;
@@ -264,8 +264,7 @@ li hr {border: solid thick navy;}
 		text-align: center;
 		font-family: arial;
 		background-color: rgba(78, 183, 231, 0.938);
-		color: white;
-		padding: 3px 0.5px;
+		padding: 10px 5px;
 		margin:auto;
 		font-size: 20px;
 	 }
