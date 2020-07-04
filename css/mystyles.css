@@ -188,7 +188,7 @@ li hr {border: solid thick navy;}
 }
 
 
-@media screen and (orientation: portrait) {
+@media screen and (max-width: 361) {
 	.gridArea {
 		display: grid;
 		text-align: center;
@@ -231,7 +231,7 @@ li hr {border: solid thick navy;}
 }
 	
 	
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 650px) {
 	.gridArea {
 		display: grid;
 		text-align: center;
