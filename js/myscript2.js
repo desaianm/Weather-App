@@ -1,6 +1,6 @@
 /* myscript2.js */
 $(document).ready(function() {
-	console.log("in jsonOut");
+	var conditions = "f002";
 	var d = new Date();
 	
 	$("#cdate").html(d);
@@ -35,6 +35,23 @@ $(document).ready(function() {
 			$(".dataWind").html(`Wind   ${response.wind.speed} m/s`);
 			$(".dataHum").html(`Humidity  ${response.main.humidity} %`);
 			$(".dataPress").html(`Pressure  ${response.main.pressure} hPa`);
+			$(".gridArea").append(
+				`<div id="weather_wrapper">
+				<div class="weatherCard">
+					<div class="currentTemp">
+						<span class="temp">${temp.charAt(0)+temp.charAt(1)}&deg;</span>
+						<span class="location">${response.name}</span>
+					</div>
+					<div class="currentWeather">
+						<span class="conditions">&#x${conditions};</span>
+						<div class="info">
+							<span class="rain">${response.main.humidity} %</span>
+							<span class="wind">${response.wind.speed} m/s</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			`);
 		}
 
 	});
